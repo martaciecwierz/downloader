@@ -1,0 +1,19 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongo:12345678@localhost:27017/downloader?authSource=admin
+  kafka:
+    bootstrap-servers: localhost:9092
+
+downloader:
+  kafka:
+    download-file:
+      topic-name: download-file-topic
+      group-id: download-file-group
+  minio:
+    url: http://localhost:9000
+    access-key: minio
+    secret-key: 12345678
+  url-connection:
+    connect-timeout: 5000
+    read-timeout: 5000
