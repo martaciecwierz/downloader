@@ -1,5 +1,5 @@
 ### Opis
-Aplikacja umożliwia przechowywanie zasobów internetowych. Za pomocą usługi REST wysyłane jest żądanie, które następnie jest wysyłane na kolejkę Kafki, gdzie plik jest zapisywany w minIO, a dane o pliku w bazie danych mongoDB.
+Aplikacja umożliwia przechowywanie zasobów internetowych. Za pomocą usługi REST wysyłane jest żądanie, które następnie trafia na kolejkę Kafki, gdzie plik jest zapisywany w minIO, a dane o pliku w bazie danych mongoDB.
 ### Wymagania
 - gradle
 - java 17
